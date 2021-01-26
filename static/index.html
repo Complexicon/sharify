@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="dropzone" drag>Drop files here</div>
+            <progress id="fileUpload" max="100" hidden></progress>
+            <div id="fileInfo"></div><br>
+            <button onclick="upload()">Upload File</button>
+            <input id="link" type="text" readonly onclick="copytoclipboard()">
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
